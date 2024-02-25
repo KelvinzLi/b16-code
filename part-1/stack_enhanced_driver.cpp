@@ -7,6 +7,7 @@ int main(int argc, char **argv)
     auto stack = StackEnhanced<int>(100);
 
     stack << 1 << 2 << 3;
+    std::cout << "hi" << std::endl;
     stack.clear();
     stack << 4 << 5 << 6;
 

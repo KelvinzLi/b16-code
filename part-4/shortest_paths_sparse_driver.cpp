@@ -1,5 +1,8 @@
 #include "shortest_paths_sparse.hpp"
-#include <utils.hpp>
+#include "graph.hpp"
+#include "../part-1/utils.hpp"
+
+// g++ shortest_paths_sparse_driver.cpp graph.cpp shortest_paths_sparse.cpp -o output
 
 int main(int argc, const char *argv[])
 {

@@ -15,6 +15,7 @@ int main(int argc, char **argv)
             queue.enqueue_front(i);
             std::cout << ' ' << i;
         }
+
         std::cout << "\nDequeued front";
         for (int i = 0; i < 3; ++i) {
             std::cout << ' ' << queue.front();

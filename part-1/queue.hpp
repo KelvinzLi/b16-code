@@ -55,7 +55,7 @@ template <typename T> class Queue
     // Return the index of the element at the front of the queue.
     size_t _head() const
     {
-        assert(_size >= 1);
+        assert(_size >= 0);
         auto index = _position + _size;
         if (index >= _storage.size()) { index -= _storage.size(); }
         return index;

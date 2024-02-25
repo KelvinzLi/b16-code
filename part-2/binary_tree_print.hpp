@@ -16,7 +16,7 @@ std::vector<std::string> _print_binary_tree_recursive(const T& tree)
     using std::max;
     using std::string;
     if (!tree) return {};
-    auto text = (std::ostringstream{} << value(tree)).str();
+    auto text = (static_cast<std::ostringstream&>(std::ostringstream{} << value(tree))).str();
 
     auto llines = _print_binary_tree_recursive(left(tree));
     auto rlines = _print_binary_tree_recursive(right(tree));

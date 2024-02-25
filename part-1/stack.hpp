@@ -4,6 +4,7 @@
 #include <cassert>
 #include <cstddef>
 #include <vector>
+#include <iostream>
 
 template <typename T> class Stack
 {

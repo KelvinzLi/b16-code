@@ -5,7 +5,7 @@
 
 #include "shortest_paths_decode.hpp"
 #include "shortest_paths_fw.hpp"
-#include <utils.hpp>
+#include "../part-1/utils.hpp"
 
 int main(int argc, const char *argv[])
 {
@@ -27,6 +27,7 @@ int main(int argc, const char *argv[])
                           << " (weight " << DP[u][v].weight << "): ";
                 print(path);
             }
+            // std::cout << 1 << std::endl;
         }
     };
 
